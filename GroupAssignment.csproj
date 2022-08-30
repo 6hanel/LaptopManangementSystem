@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87F66AA4-B695-4126-A890-26E0D56B5315}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GroupAssignment</RootNamespace>
+    <AssemblyName>GroupAssignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddData.cs" />
+    <Compile Include="FormCheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckout.Designer.cs">
+      <DependentUpon>FormCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccCustomer.Designer.cs">
+      <DependentUpon>CreateAccCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletionDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletionDate.Designer.cs">
+      <DependentUpon>CompletionDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletionDateCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletionDateCus.Designer.cs">
+      <DependentUpon>CompletionDateCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccTechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccTechnician.Designer.cs">
+      <DependentUpon>CreateAccTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccReception.Designer.cs">
+      <DependentUpon>CreateAccReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationChange.Designer.cs">
+      <DependentUpon>ConfirmationChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationLogout.Designer.cs">
+      <DependentUpon>ConfirmationLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompletionDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompletionDate.Designer.cs">
+      <DependentUpon>AddCompletionDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="PendingPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingPayment.Designer.cs">
+      <DependentUpon>PendingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptDetail.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="Update.cs" />
+    <Compile Include="UpdateProfileRecep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfileRecep.Designer.cs">
+      <DependentUpon>UpdateProfileRecep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfileCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfileCustomer.Designer.cs">
+      <DependentUpon>UpdateProfileCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfileTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfileTech.Designer.cs">
+      <DependentUpon>UpdateProfileTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceRequestCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequestCus.Designer.cs">
+      <DependentUpon>ServiceRequestCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest.Designer.cs">
+      <DependentUpon>ServiceRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPass.Designer.cs">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician.cs" />
+    <Compile Include="TotalIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalIncome.Designer.cs">
+      <DependentUpon>TotalIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>ServiceReport.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmin.Designer.cs">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainTech.Designer.cs">
+      <DependentUpon>MainTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainCus.Designer.cs">
+      <DependentUpon>MainCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainRecep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainRecep.Designer.cs">
+      <DependentUpon>MainRecep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseService.Designer.cs">
+      <DependentUpon>ChooseService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeService.Designer.cs">
+      <DependentUpon>FormChangeService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddCompletionDate.resx">
+      <DependentUpon>AddCompletionDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckout.resx">
+      <DependentUpon>FormCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletionDate.resx">
+      <DependentUpon>CompletionDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletionDateCus.resx">
+      <DependentUpon>CompletionDateCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationChange.resx">
+      <DependentUpon>ConfirmationChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationLogout.resx">
+      <DependentUpon>ConfirmationLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccCustomer.resx">
+      <DependentUpon>CreateAccCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeService.resx">
+      <DependentUpon>FormChangeService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccTechnician.resx">
+      <DependentUpon>CreateAccTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccReception.resx">
+      <DependentUpon>CreateAccReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingPayment.resx">
+      <DependentUpon>PendingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfileRecep.resx">
+      <DependentUpon>UpdateProfileRecep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfileCustomer.resx">
+      <DependentUpon>UpdateProfileCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfileTech.resx">
+      <DependentUpon>UpdateProfileTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAdmin.resx">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainTech.resx">
+      <DependentUpon>MainTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainCus.resx">
+      <DependentUpon>MainCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseService.resx">
+      <DependentUpon>ChooseService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainRecep.resx">
+      <DependentUpon>MainRecep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ResetPass.resx">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceReport.resx">
+      <DependentUpon>ServiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceRequest.resx">
+      <DependentUpon>ServiceRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceRequestCus.resx">
+      <DependentUpon>ServiceRequestCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalIncome.resx">
+      <DependentUpon>TotalIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
